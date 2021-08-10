@@ -2,18 +2,12 @@
 // pada class. Secara default properties pada class memiliki access
 // modifiers public properties pada class dapat dianotasikan typenya
 // dengan cara seperti menganotasikan type pada sebuah varible
-
-class Employee {
-    name: string;
-    age: number;
-    address: number;
-
-    constructor(name: string, age: number) {
+var Employee = /** @class */ (function () {
+    function Employee(name, age) {
         this.name = name;
-        this.age = age
+        this.age = age;
     }
-
-}
-
-const admin = new Employee('John Doe', 28)
-console.log(admin, '<<<admin')
+    return Employee;
+}());
+var admin = new Employee('John Doe', 28);
+console.log(admin, '<<<admin');
