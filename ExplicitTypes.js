@@ -1,0 +1,14 @@
+var mixed = [];
+mixed.push('hello world');
+mixed.push(10);
+mixed.push(false);
+console.log(mixed, '<<mixed array');
+var uid;
+uid = '1234Xdz';
+uid = 1234;
+console.log(uid, '<< uid as number or string');
+var ninjaOne;
+ninjaOne = { name: 'Yoshi', age: 27 };
+var ninjaTwo;
+ninjaTwo = { name: 'mario', age: 20, beltColour: 'blue' };
+console.log(ninjaTwo, '<< ninjaTwo');

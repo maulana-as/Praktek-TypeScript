@@ -31,3 +31,17 @@ var Logger = /** @class */ (function () {
 }());
 var myLogger = new Logger('Error request');
 myLogger.errorLog();
+var User = /** @class */ (function () {
+    function User(name, password) {
+        this.name = name;
+        this.password = password;
+    }
+    User.prototype.passWordMin = function () {
+        if (this.password.length < 6) {
+            return 'Min Password adalah 6 karakter';
+        }
+    };
+    return User;
+}());
+var adminPN = new User('Admin 01', '1234');
+console.log(adminPN.passWordMin());
